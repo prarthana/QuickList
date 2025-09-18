@@ -8,6 +8,7 @@ body {
 body {
   font-family: 'Inter', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #F4F5F7;
   min-height: 100vh;
   margin: 0;
   padding: 1px 0; 
@@ -106,6 +107,7 @@ input[type="checkbox"] {
   top: 100%;
   right: 0px;
   border-radius: 0.8rem;
+  background-color: #F4F5F7;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   display: none;
   flex-direction: column;
