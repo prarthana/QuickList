@@ -271,6 +271,7 @@ input.new-item{
   border-radius: .8rem / 50%;
   width: 92%;
   height: 1.8rem;
+  font-size: 1rem;
   z-index: 1;  
 }
 input.new-item:focus{
@@ -638,7 +639,7 @@ body.theme-grey [type="checkbox"]:checked {
     text-align: center;
     column-span: all;
     margin: 5rem 3rem ;
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 2.2rem;
     font-weight: 400;
     color:rgba(0, 0, 0, 0.5);
@@ -665,8 +666,12 @@ body.theme-grey [type="checkbox"]:checked {
   }
   .title{
     width: 80%;
+    font-size: 1.4rem;
   }
 
+  button.delete-list{
+    font-size: 1.2rem;
+  }
   button.edit-title{
     background: url(images/btn_edit_16_dark.png) no-repeat center;
     border: 0;
@@ -680,15 +685,24 @@ body.theme-grey [type="checkbox"]:checked {
   }
   input.new-item{
     width: 94%;
+    height: 2.2rem;
+    font-size: 1.2rem;
+  }
+  button.add{
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-top: -2.3rem;
   }
   .text{
     width:60%;
+    font-size: 1.2rem;
   }
   .add-sub, .delete{
     float: right;
     display: block;
     width: 1rem;
     height: 1rem;
+    font-size: 1.1rem;
     text-align: center;
   }
 }
