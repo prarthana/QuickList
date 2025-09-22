@@ -576,7 +576,7 @@ body.theme-grey [type="checkbox"]:checked {
 /* Extra small devices (phones) ----------------------------------------------*/
 @media (max-width: 575.98px) {
   body {
-    font-size: .8rem;
+    font-size: 1rem;
   }
   
   .header-bg{
@@ -595,8 +595,8 @@ body.theme-grey [type="checkbox"]:checked {
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -655,9 +655,9 @@ body.theme-grey [type="checkbox"]:checked {
   .container {
     display: block;
     margin: auto;      
-    width: 96%;
+    width: 82%;
     max-width: 100%;   
-    column-count: 2;
+    column-count: 1;
     column-gap: 0.8rem;
   }
   .list-container{
@@ -679,7 +679,7 @@ body.theme-grey [type="checkbox"]:checked {
     width:80%
   }
   input.new-item{
-    width: 88%;
+    width: 94%;
   }
   .text{
     width:60%;
@@ -760,4 +760,91 @@ body.theme-grey [type="checkbox"]:checked {
   input.new-item{
     width: 88%;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  /* Light */
+body.theme-light {
+  background-color: #bdbdbd;
+  color: #949494;
+}
+body.theme-light .theme-dropdown{
+  background-color: #bdbdbd;
+}
+body.theme-light .circle.light { 
+  background: #9c9c9c; ; 
+}
+body.theme-light .theme-option:hover, body.theme-light .list-container {
+    background-color: #cbcbcb;
+}
+body.theme-light .theme-icon, body.theme-light .new-list, body.theme-light .title, body.theme-light .text, body.theme-light .add-sub {
+  color: #8f8f8f;
+}
+body.theme-light input.new-item{
+  background-color: #b1b1b1;
+}
+body.theme-light button.add{
+  background-color: #6e6e6e;
+}
+body.theme-light .delete{
+  color: #ff3f99;
+}
+
+/* Dark */
+body.theme-dark {
+  background-color: #121212;
+}
+ body.theme-dark .theme-option:hover{
+  background: #121212;
+}
+body.theme-dark .theme-dropdown, body.theme-dark .theme-icon:hover, body.theme-dark .new-list:hover, body.theme-dark .list-container{
+  background-color:#1e1e1e;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+}
+
+
+/* Mountain */
+body.theme-mountain {
+  background: #5E605A url(images/bg_mountains_dark.jpg) repeat-x bottom;
+}
+body.theme-mountain button.add{
+  background-color: #8CB06A;
+}
+
+/* Ocean */
+body.theme-ocean {
+  background: linear-gradient(to bottom, 
+  #3c4745 25%,
+  #3c4e4e 45%, 
+  #21444b 75%, 
+  #103942 88%, 
+  #0a2d35 95%
+);}
+body.theme-ocean button.add{
+  background-color: #1D7083;
+}
+
+/* Lavender */
+body.theme-lavender {
+  background: url('images/bg_lavender_dark.png'), linear-gradient(120deg, #413946 50%, #766d7f 75%);
+  background-size: auto;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+body.theme-lavender button.add{
+  background-color: #8251a3;
+}
+
+/* Grey */
+body.theme-grey{
+  background-color: #393e3f;
+}
+body.theme-grey .list-container, body.theme-grey .theme-dropdown {
+  background-color: #4b5151;
+}
+body.theme-grey input.new-item{
+  background-color: #393e3f;
+  border: 1px solid #292c2d;
+}
 }
